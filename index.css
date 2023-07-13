@@ -1,0 +1,248 @@
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+
+
+    background: radial-gradient(circle at top center, hsla(303, 1%, 32%, 0.692) 5%, transparent 100%);
+    background-color: #403e42;
+
+
+}
+
+.header {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0px;
+    background-color: none;
+    margin-top: 0.50%;
+    margin-bottom: 0;
+}
+
+.link-to-activate {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+
+
+.cont-left {
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+/* .cont-log-tigo {} */
+.log-tigo {
+    margin: 0 0 0 40%;
+    width: 50%;
+}
+
+.log-tigo-two {
+    padding: 10px;
+    width: 70%;
+}
+
+.logo-deezer {
+    display: flex;
+    justify-content: center;
+    margin: 0 4% 1% 0;
+
+}
+
+.logo {
+
+    width: 120px;
+
+}
+
+.login-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    margin: 0 0 50px 0;
+}
+
+.login {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 12px;
+
+}
+
+.cont-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Left, Center, Right */
+    align-items: center;
+    padding: 10px;
+    background-color: none;
+    width: 30%;
+    margin: auto;
+}
+
+.head h1 {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 0px 0px;
+    margin-bottom: 10%;
+}
+
+.cont-target-premium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 0px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    background: linear-gradient(30deg, #4e36d4d3, #2a3cdf, #2aa5df);
+    background-color: #403e42;
+    margin-bottom: 15%;
+
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.cont-target-premium span {
+    text-align: center;
+    padding: 0px;
+    font-size: x-medium;
+    margin: 0 15% 0 15%;
+
+}
+
+button {
+    display: inline-block;
+    padding: 15px 80px;
+    border: none;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #161515e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.cont-target-family {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 0px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    background: linear-gradient(30deg, #4e36d4d3, #2a3cdf, #2aa5df);
+    background-color: #403e42;
+    margin-bottom: 15%;
+}
+
+.cont-target-family span {
+    text-align: center;
+    padding: 0px;
+    font-size: x-medium;
+    margin: 0 15% 0 15%;
+
+}
+
+.inf-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.inf-price h2 {
+    padding: 0px;
+    margin-bottom: auto;
+}
+
+.inf-price p {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+.more-info p {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.more-info a {
+    color: gray;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 0px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    background: linear-gradient(30deg, #4e36d4d3, #2a3cdf, #2aa5df);
+    background-color: #403e42;
+    margin-bottom: 15%;
+}
+
+.gift-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 0px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    background: linear-gradient(30deg, #4e36d4d3, #2a3cdf, #2aa5df);
+    background-color: #403e42;
+    margin-bottom: 15%;
+}
+
+.text-end {
+    font-size: small;
+}
