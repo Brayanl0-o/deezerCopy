@@ -236,3 +236,76 @@ button:hover {
 .text-end {
     font-size: small;
 }
+
+/* Resposive */
+@media screen and (max-width: 770px) {
+    .cont-left {
+        display: none;
+    }
+
+    .log-tigo {
+        margin: 5% auto;
+        width: 30%;
+    }
+
+    .cont-main {
+        width: 70%;
+    }
+
+    .cont-target-premium,
+    .cont-target-family,
+    .offer,
+    .gift-card {
+        margin-bottom: 10%;
+    }
+
+    .head h1 {
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .log-tigo {
+        margin: 5% auto;
+        width: 40%;
+    }
+
+
+    .cont-main {
+        width: 90%;
+    }
+
+    .cont-target-premium,
+    .cont-target-family,
+    .offer,
+    .gift-card {
+        margin-bottom: 5%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 5px 30px;
+        font-size: 12px;
+    }
+
+    .cont-target-premium span,
+    .cont-target-family span,
+    .inf-price p,
+    .more-info p,
+    .text-end {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo-deezer {
+        margin: auto;
+    }
+
+    .login-bottom {
+        display: none;
+    }
+}
