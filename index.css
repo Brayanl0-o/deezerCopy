@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Caveat:wght@400;600;700&family=Foldit:wght@100;400;500;600;700&family=Lilita+One&family=Permanent+Marker&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&family=Rubik+Iso&display=swap');
 
 body {
+    margin: 0;
     color: #fff;
     font-family: 'roboto';
     background: radial-gradient(circle at top center, hsla(303, 1%, 32%, 0.692) 5%, transparent 100%);
     background-color: #403e42;
+    border: 1px hsl(269, 39%, 12%) solid;
 }
 
 .header {
@@ -325,6 +327,37 @@ button:hover {
     font-size: small;
 }
 
+/* Style Footer */
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-top: 1px hsl(269, 39%, 12%) solid;
+}
+
+.stores-icons {
+    padding: 3.5% 0% 2% 0%;
+}
+
+.stores-icons img {
+    border-radius: 10%;
+}
+
+.cont-foot {
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: none;
+    gap: 100px;
+}
+
+.cont-foot ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: #a09fa0;
+}
+
 /* Resposive */
 @media screen and (max-width: 770px) {
     .cont-left {
@@ -351,6 +384,7 @@ button:hover {
         margin-bottom: 5%;
     }
 }
+
 
 @media screen and (max-width: 550px) {
     .log-tigo {
