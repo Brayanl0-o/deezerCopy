@@ -71,14 +71,17 @@
         <!-- Conten-discount -->
         <div class="buttom-discount-annual" id="discount-annual-box">
             <a class="discount-annual"
-                onclick="toggleCustomShow('discount-annual-premium'), hidden('discount-annual-box')">Descuento anual
+                onclick="toggleCustomShow('discount-annual-premium'), hiddenElement('discount-annual-box')">Descuento
+                anual
                 <i class=" fi fi-rr-angle-small-down"></i></a>
-            <div class="mini-box">
+            <div class="mini-box ">
                 <span>-25%</span>
             </div>
         </div>
-        <div class="buttom-discount-student">
-            <a class="discount-student" onclick="toggleCustomShow('discount-annual-student')">Descuento para
+        <div class="buttom-discount-student" id="buttom-discount-student">
+            <a class="discount-student"
+                onclick="toggleCustomShow('discount-annual-student'), hiddenElement('buttom-discount-student')">Descuento
+                para
                 estudiantes<i class=" fi
                 fi-rr-angle-small-down"></i></a>
             <div class="mini-box">
@@ -155,8 +158,10 @@
                 <a href="https://www.deezer.com/mx/offers/premium">Más información</a>
             </div>
         </div>
-        <div class="buttom-discount-annual-family">
-            <a class="discount-annual" onclick="toggleCustomShow('discount-annual-family')">Descuento anual<i class=" fi
+        <div class="buttom-discount-annual-family" id="buttom-discount-annual-family">
+            <a class="discount-annual"
+                onclick="toggleCustomShow('discount-annual-family'), hiddenElement('buttom-discount-annual-family')">Descuento
+                anual<i class=" fi
                 fi-rr-angle-small-down"></i></a>
             <div class="mini-box">
                 <span>-8%</span>
@@ -227,7 +232,7 @@
                 element.classList.add("custom-show");
             }
         }
-        function hidden(id) {
+        function hiddenElement(id) {
             var element = document.getElementById(id);
             if (element.classList.contains("custom-hidden")) {
                 element.classList.remove("custom-hidden");

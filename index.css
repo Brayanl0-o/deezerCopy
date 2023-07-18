@@ -5,8 +5,6 @@ body {
     font-family: 'roboto';
     background: radial-gradient(circle at top center, hsla(303, 1%, 32%, 0.692) 5%, transparent 100%);
     background-color: #403e42;
-
-
 }
 
 .header {
@@ -178,7 +176,7 @@ button:hover {
 
 .custom-hidden {
     display: none;
-    background-color: red;
+
 }
 
 .prices {
