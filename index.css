@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Caveat:wght@400;600;700&family=Foldit:wght@100;400;500;600;700&family=Lilita+One&family=Permanent+Marker&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&family=Rubik+Iso&display=swap');
 
+html {
+    border-right: 1px hsla(0, 1%, 35%, 0.979) solid;
+}
+
 body {
     margin: 0;
     color: #fff;
     font-family: 'roboto';
-    background: radial-gradient(circle at top center, hsla(303, 1%, 32%, 0.692) 5%, transparent 100%);
-    background-color: #403e42;
-    border: 1px hsl(269, 39%, 12%) solid;
+    background-color: rgb(29, 27, 27);
+
 }
 
 .header {
-    margin: 0 50px;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    padding: 0;
-    background-color: transparent;
+    margin: 50px;
     margin-top: 1%;
-    margin-bottom: 0;
 }
 
 .link-to-activate {
@@ -40,7 +40,6 @@ body {
 .cont-left i {
     padding: 5px;
     font-size: 80%;
-
 }
 
 .log-tigo {
@@ -49,23 +48,19 @@ body {
 }
 
 .log-tigo-two {
-    padding: 10px;
-    width: 70%;
+    padding: 50% 0% 50% 0%;
+    width: 60%;
 }
-
 
 .logo {
     width: 130px;
-
 }
 
 .logo-deezer {
     margin: 0 10% 0 0;
-
 }
 
 .login-bottom {
-
     align-items: center;
     padding: 15px 25px 10px 25px;
     border: 1px solid gray;
@@ -88,15 +83,16 @@ body {
     align-items: center;
     padding: 10px;
     background-color: none;
-    width: 30%;
+    width: 32%;
     margin: auto;
+    margin-top: -3%;
+    margin-bottom: 5%;
 }
 
 .head h1 {
-    margin: 0;
     text-align: center;
     color: white;
-    padding: 0px 0px;
+    margin: 0;
     margin-bottom: 10%;
 }
 
@@ -107,7 +103,7 @@ body {
     padding: 10px;
     border: 0px solid rgb(255, 0, 0);
     border-radius: 20px;
-    background: linear-gradient(30deg, #4e36d4d3, #2a3cdf, #2aa5df);
+    background: linear-gradient(69.06deg, #b84fdd -26.76%, #4965f4 44.6%, #2efb74 132.54%);
     background-color: #403e42;
     margin-bottom: 1.5%;
 
@@ -129,15 +125,15 @@ body {
 
 button {
     display: inline-block;
-    padding: 15px 80px;
+    padding: 20px 100px;
     border: none;
     border-radius: 30px;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: smaller;
+    font-weight: 900;
     text-align: center;
     text-decoration: none;
     color: #fff;
-    background-color: #161515e0;
+    background-color: #161515f8;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
@@ -159,9 +155,7 @@ button:hover {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
-
 
 .custom-show {
     display: flex !important;
@@ -171,18 +165,17 @@ button:hover {
     padding: 10px;
     border: 0px solid rgb(255, 0, 0);
     border-radius: 20px;
-    background: linear-gradient(30deg, #4e36d4d3, #2a3cdf, #2aa5df);
+    background: linear-gradient(69.06deg, #b84fdd -26.76%, #4965f4 44.6%, #2efb74 132.54%);
     background-color: #403e42;
-    margin-bottom: 1.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .custom-hidden {
     display: none;
-
 }
 
 .prices {
-
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +183,6 @@ button:hover {
 
 .price-before {
     text-decoration: line-through;
-
 }
 
 .cont-target-discount-anual span,
@@ -200,21 +192,15 @@ button:hover {
     padding: 0px;
     font-size: x-medium;
     margin: 0 15% 0% 15%;
-
-
 }
-
 
 .buttom-discount-student {
     margin-bottom: 10%;
 }
 
-
 .buttom-discount-annual-family {
     margin-bottom: 10%;
 }
-
-
 
 .discount-annual,
 .discount-student {
@@ -231,16 +217,20 @@ button:hover {
     padding: 10px;
     font-size: 100%;
     font-weight: bolder;
-
 }
 
-.mini-box {
+.mini-box,
+.mini-box-family {
     margin-left: auto;
     border-radius: 250px;
     padding: 5px 15px;
-    background: linear-gradient(30deg, #4e36d4d3, #2a3cdf, #2aa5df);
+    background: linear-gradient(69.06deg, #b84fdd -26.76%, #4965f4 44.6%, #2efb74 132.54%);
     font-size: -small;
     font-weight: bolder;
+}
+
+.mini-box-family {
+    background: linear-gradient(53.13deg, #dc4c11 10.71%, #feab2e);
 }
 
 .cont-target-family {
@@ -250,9 +240,15 @@ button:hover {
     padding: 10px;
     border: 0px solid rgb(255, 0, 0);
     border-radius: 20px;
-    background: linear-gradient(30deg, #4e36d4d3, #2a3cdf, #2aa5df);
+    background: linear-gradient(53.13deg, #dc4c11 10.71%, #feab2e);
     background-color: #403e42;
     margin-bottom: 1.5%;
+}
+
+.cont-target-discount-family {
+    background: linear-gradient(53.13deg, #dc4c11 10.71%, #feab2e);
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .cont-target-family span {
@@ -260,14 +256,12 @@ button:hover {
     padding: 0px;
     font-size: x-medium;
     margin: 0 15% 0 15%;
-
 }
 
 .inf-price {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .inf-price h2 {
@@ -285,7 +279,6 @@ button:hover {
     flex-direction: column;
     align-items: center;
     font-size: 15px;
-
 }
 
 .more-info p {
@@ -294,8 +287,8 @@ button:hover {
 }
 
 .more-info a {
-    color: gray;
-    padding: 0px;
+    color: rgba(250, 250, 250, 0.836);
+    padding: 10px;
     margin-top: 0px;
 }
 
@@ -306,9 +299,9 @@ button:hover {
     padding: 10px;
     border: 0px solid rgb(255, 0, 0);
     border-radius: 20px;
-    background: linear-gradient(30deg, #4e36d4d3, #2a3cdf, #2aa5df);
+    background: linear-gradient(180deg, #202122, #3a3b47 55.56%);
     background-color: #403e42;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .gift-card {
@@ -318,21 +311,35 @@ button:hover {
     padding: 10px;
     border: 0px solid rgb(255, 0, 0);
     border-radius: 20px;
-    background: linear-gradient(30deg, #4e36d4d3, #2a3cdf, #2aa5df);
+    background: linear-gradient(166deg, #202122 39%, #3c3c49 82%);
     background-color: #403e42;
     margin-bottom: 15%;
 }
 
-.text-end {
+.gift-card a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
     font-size: small;
+    font-weight: 100;
 }
+
+.text-end {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: small;
+    font-weight: 100;
+    line-height: 1.8;
+}
+
 
 /* Style Footer */
 footer {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    border-top: 1px hsl(269, 39%, 12%) solid;
+    border-top: 1px hsla(0, 1%, 35%, 0.979) solid;
 }
 
 .stores-icons {
