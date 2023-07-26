@@ -3,18 +3,44 @@
 /* font-family: 'Roboto', sans-serif; */
 html {
     border-right: 1px hsla(0, 1%, 35%, 0.979) solid;
-
 }
 
 body {
     color: #fff;
-    background-color: rgb(29, 27, 27);
     margin: auto;
     margin-top: 1%;
     width: 94%;
     font-family: 'Roboto', sans-serif;
+    background: radial-gradient(ellipse at center, #131313, #111111);
 }
 
+/* Styles for background lineal gradient */
+.try-background {
+    display: block;
+    position: absolute;
+    background-size: 100% 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 100%;
+    content: "";
+    filter: blur(100px);
+    height: 551.5px;
+    left: 0px;
+    right: 0px;
+    line-height: 15.9996px;
+    margin-left: 326.844px;
+    margin-right: 326.859px;
+    opacity: 0.4;
+    top: 50px;
+    width: 1225.3px;
+    background: linear-gradient(126.05deg, rgba(241, 42, 42, 0.9) 25.95%, rgb(191, 28, 235) 44.46%, rgb(6, 173, 87) 65.35%, rgba(6, 173, 87, 0.6) 76.7%);
+    color: rgb(255, 255, 255);
+    z-index: -1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Styles for header, with logo, icos and links to more info */
 .header {
     display: flex;
     flex-flow: row;
@@ -28,23 +54,23 @@ body {
 }
 
 .cont-left {
-    font-weight: 800;
     display: flex;
     flex-direction: column;
+    font-weight: 800;
     gap: 10px;
-    padding: 20px 35px;
+    padding: 20px 30px 15px 30px;
     border: 1px solid gray;
     border-radius: 10px;
 }
 
 .cont-left i {
     padding: 5px;
-    font-size: 80%;
+    font-size: 75%;
 }
 
 .log-tigo {
     margin: 5% 0 0 42%;
-    width: 15%;
+    width: 12%;
 }
 
 .log-tigo-two {
@@ -53,7 +79,7 @@ body {
 }
 
 .logo {
-    width: 130px;
+    width: 120px;
 }
 
 .logo-deezer {
@@ -62,11 +88,11 @@ body {
 
 .login-bottom {
     align-items: center;
-    padding: 15px 25px 10px 25px;
-    border: 1px solid gray;
-    border-radius: 25px;
-    margin: 0 0 50px 0;
     text-align: center;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    margin: 0 15px 50px 0px;
 }
 
 .login {
@@ -74,27 +100,45 @@ body {
     color: aliceblue;
     font-weight: bolder;
     font-size: 12px;
-
 }
 
+/* List with every targets and important info */
 ul.cont-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 34%;
+    display: flex;
+    flex-flow: column nowrap;
     margin: auto;
-    margin-bottom: 5%;
+    margin: 0% 32% 0% 32%;
 }
 
-li.discounts {
+/* Title first main 'li' */
+.title-main,
+.title-main h1 {
     list-style: none;
-}
-
-.cont-main h1 {
     text-align: center;
     color: white;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
 }
 
+/* Styles add incompatibility */
+.incompatibility-notice {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    background-color: #252424;
+    font-size: smaller;
+}
+
+.incompatibility-notice img {
+    padding: 20px;
+    width: 4%;
+    height: 40%;
+}
+
+/* Style for first target with information promotional premium*/
 li.cont-target-premium {
     display: flex;
     flex-direction: column;
@@ -105,7 +149,6 @@ li.cont-target-premium {
 }
 
 .title {
-
     font-size: 2.4rem;
     padding: 0px;
     color: white;
@@ -114,13 +157,12 @@ li.cont-target-premium {
 
 li.cont-target-premium span {
     text-align: center;
-    padding: 0px;
     font-size: medium;
-    margin: 0 15% 0 15%;
+    margin: 0 15% 2% 15%;
 }
 
+/* Styles for every targets buttons */
 button {
-    display: inline-block;
     padding: 20px 100px;
     border: none;
     border-radius: 30px;
@@ -130,7 +172,6 @@ button {
     text-decoration: none;
     color: #fff;
     background-color: #161515f8;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
@@ -139,21 +180,42 @@ button:hover {
     color: #000000;
 }
 
-.buttom-discount-annual,
-.buttom-discount-student,
-.buttom-discount-annual-family {
+/* information price and related. Every targets mains */
+.inf-price {
     display: flex;
-    flex-flow: row;
+    flex-direction: column;
     align-items: center;
-    border: 1px white solid;
-    border-radius: 250px;
-    padding: 10px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
+.inf-price h2 {
+    padding: 0px;
+    margin-bottom: auto;
+}
 
+.inf-price p {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+.more-info p {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.more-info a {
+    color: rgba(250, 250, 250, 0.836);
+    padding: 10px;
+    margin-top: 0px;
+}
+
+/* Class discounts for show and hidden */
 .custom-show {
     display: flex !important;
     flex-direction: column;
@@ -171,14 +233,23 @@ button:hover {
     display: none;
 }
 
-.prices {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+/* Styles box discounts information price and related. Every discounts targets */
+li.discounts {
+    list-style: none;
 }
 
-.price-before {
-    text-decoration: line-through;
+.buttom-discount-annual,
+.buttom-discount-student,
+.buttom-discount-annual-family {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border: 1px white solid;
+    border-radius: 250px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 li.cont-target-discount-anual span,
@@ -188,6 +259,16 @@ li.cont-target-discount-family p.fix-text {
     padding: 0px;
     font-size: medium;
     margin: 0 15% 0% 15%;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.price-before {
+    text-decoration: line-through;
 }
 
 .buttom-discount-student {
@@ -229,6 +310,7 @@ li.cont-target-discount-family p.fix-text {
     background: linear-gradient(53.13deg, #dc4c11 10.71%, #feab2e);
 }
 
+/* Styles for all elements family target */
 li.cont-target-family {
     display: flex;
     flex-direction: column;
@@ -240,12 +322,6 @@ li.cont-target-family {
     margin-bottom: 1.5%;
 }
 
-li.cont-target-discount-family {
-    background: linear-gradient(53.13deg, #dc4c11 10.71%, #feab2e);
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-
 li.cont-target-family span {
     text-align: center;
     padding: 0px;
@@ -253,40 +329,13 @@ li.cont-target-family span {
     margin: 0 15% 0 15%;
 }
 
-.inf-price {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+li.cont-target-discount-family {
+    background: linear-gradient(53.13deg, #dc4c11 10.71%, #feab2e);
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
-.inf-price h2 {
-    padding: 0px;
-    margin-bottom: auto;
-}
-
-.inf-price p {
-    padding: 0px;
-    margin-top: 0px;
-}
-
-.more-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 15px;
-}
-
-.more-info p {
-    padding: 0px;
-    margin-bottom: 0px;
-}
-
-.more-info a {
-    color: rgba(250, 250, 250, 0.836);
-    padding: 10px;
-    margin-top: 0px;
-}
-
+/* Style for partners offer */
 .offer {
     display: flex;
     flex-direction: column;
@@ -298,6 +347,7 @@ li.cont-target-family span {
     margin-bottom: 10%;
 }
 
+/* Style for gift card and their elements */
 .gift-card {
     display: flex;
     flex-direction: column;
@@ -317,7 +367,9 @@ li.cont-target-family span {
     font-weight: 100;
 }
 
+/* Text end important */
 .text-end {
+    list-style: none;
     text-align: center;
     width: 90%;
     margin: auto;
@@ -326,12 +378,13 @@ li.cont-target-family span {
     line-height: 1.8;
 }
 
-
 /* Style Footer */
 footer {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    justify-content: center;
+    margin: auto;
     border-top: 1px hsla(0, 1%, 35%, 0.979) solid;
 }
 
@@ -345,7 +398,10 @@ footer {
 
 .cont-foot {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     font-family: 'Times New Roman', Times, serif;
     gap: 100px;
 }
@@ -358,9 +414,33 @@ footer {
 }
 
 /* Resposive */
+
+@media screen and (max-width: 1380px) {
+
+    .try-background {
+        /* Ajustar los estilos para pantallas más pequeñas */
+        height: 400px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        top: 30px;
+    }
+
+    ul.cont-main {
+        margin: 0% 20% 0% 20%;
+    }
+
+}
+
 @media screen and (max-width: 770px) {
-    .cont-left {
+
+    .cont-left,
+    .login-bottom {
         display: none;
+    }
+
+    .logo-deezer {
+        margin: auto;
     }
 
     .log-tigo {
@@ -368,8 +448,8 @@ footer {
         width: 30%;
     }
 
-    .cont-main {
-        width: 70%;
+    ul.cont-main {
+        margin: 0% 10% 0% 10%;
     }
 
     li.cont-target-premium,
@@ -391,16 +471,16 @@ footer {
         width: 40%;
     }
 
-
-    .cont-main {
-        width: 90%;
-    }
-
     li.cont-target-premium,
     li.cont-target-family,
     .offer,
     .gift-card {
+        padding: 10px;
         margin-bottom: 5%;
+    }
+
+    .title-main h1 {
+        font-size: 20px;
     }
 
     .title {
@@ -409,7 +489,7 @@ footer {
 
     button {
         padding: 5px 30px;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     li.cont-target-premium span,
@@ -417,16 +497,13 @@ footer {
     .inf-price p,
     .more-info p,
     .text-end {
+        padding: 10px;
         font-size: 12px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .logo-deezer {
-        margin: auto;
-    }
-
-    .login-bottom {
-        display: none;
+    ul.cont-main {
+        margin: 0% 5% 0% 5%;
     }
 }
