@@ -230,7 +230,7 @@ button:hover {
 }
 
 .custom-hidden {
-    display: none;
+    display: none !important;
 }
 
 /* Styles box discounts information price and related. Every discounts targets */
