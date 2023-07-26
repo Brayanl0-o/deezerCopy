@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -24,13 +24,10 @@
                     data-activation-link="/activate/tigoco">
             </a>
         </div>
-
-
         <div class="logo-deezer">
             <a href="/"><img src="img/Deezer-Emblem-removebg-preview.png" alt="Deezer" class="logo">
             </a>
         </div>
-
         <div class="login-bottom">
             <div>
                 <a href="https://www.deezer.com/mx/login" class="login">
@@ -40,7 +37,7 @@
         </div>
     </div>
     <!-- Add in the future semantica Article -->
-    <div class="cont-main">
+    <ul class="cont-main">
         <div class="head">
             <h1>Para empezar a escuchar, solo elige un plan</h1>
         </div>
@@ -49,7 +46,7 @@
 
         </div>
 
-        <div class="cont-target-premium">
+        <li class="cont-target-premium">
             <a href="#" class="title">
                 <p>deezer <b>Premium</b></p>
             </a>
@@ -59,18 +56,18 @@
                 Disfruta de sonido de alta fidelidad y escucha en todos tus dispositivos.
             </span>
             <br>
-            <a
-                href="https://www.deezer.com/pay_register?referer=https%3A%2F%2Fwww.deezer.com%2Fmx%2Foffers&pay=1&redirect_type=page&redirect_link=%2Fpayment%2Fgo.php%3Fid%3D1000001%26rg%3D1%26origin%3Doffers-page-deezer-premium%26user_just_logged%3D1"><button
-                    type="button">PRUÉBALO GRATIS</button></a>
+            <button type="button" onclick="window.location.href='https://www.deezer.com/pay_register'">
+                PRUÉBALO GRATIS
+            </button>
             <div class="inf-price">
                 <h2>1 mes gratis</h2>
-                <p> luego Col $17.900/mes.</p>
+                <p>luego Col $17.900/mes.</p>
             </div>
             <div class="more-info">
                 <p>Sin compromiso, puedes cancelar cuando quieras.</p>
                 <a href="https://www.deezer.com/mx/offers/premium">Más información</a>
             </div>
-        </div>
+        </li>
 
         <!-- Conten-discount -->
         <div class="buttom-discount-annual" id="discount-annual-box">
@@ -82,26 +79,28 @@
                 <span>-25%</span>
             </div>
         </div>
+
         <div class="buttom-discount-student" id="buttom-discount-student">
             <a class="discount-student"
-                onclick="toggleCustomShow('discount-annual-student'), hiddenElement('buttom-discount-student')">Descuento
-                para
-                estudiantes<i class=" fi
-                fi-rr-angle-small-down"></i></a>
+                onclick="toggleCustomShow('discount-annual-student'), hiddenElement('buttom-discount-student')">
+                Descuento para estudiantes
+                <i class=" fi fi-rr-angle-small-down"></i>
+            </a>
             <div class="mini-box">
                 <span>-50%</span>
             </div>
         </div>
-        <div class="cont-target-discount-anual" id="discount-annual-premium" style="display: none;">
+
+        <li class="cont-target-discount-anual" id="discount-annual-premium" style="display: none;">
             <a href="#" class="title">
-                <p>deezer <b>Premium Anual</b></b></p>
+                <p>deezer <b>Premium Anual</b></p>
             </a>
             <span>Todos los beneficios de Deezer Premium a un precio anual con descuento.
             </span>
             <br>
-            <a
-                href="https://www.deezer.com/pay_register?referer=https%3A%2F%2Fwww.deezer.com%2Fmx%2Foffers&pay=1&redirect_type=page&redirect_link=%2Fpayment%2Fgo.php%3Fid%3D1000001%26rg%3D1%26origin%3Doffers-page-deezer-premium%26user_just_logged%3D1"><button
-                    type="button">COMENZAR PRUEBA GRATUITA DE 1 MES</button></a>
+            <button type="button" onclick="window.location.href='https://www.deezer.com/pay_register'">
+                COMENZAR PRUEBA GRATUITA DE 1 MES
+            </button>
             <div class="inf-price">
                 <h2>25 % de descuento cada año</h2>
                 <div class="prices">
@@ -113,21 +112,23 @@
                 <p>Sin compromiso, puedes cancelar cuando quieras.</p>
                 <a href="https://www.deezer.com/mx/offers/premium">Más información</a>
             </div>
-        </div>
-        <div class="cont-target-discount-student" id="discount-annual-student" style="display: none;">
+        </li>
+
+        <li class="cont-target-discount-student" id="discount-annual-student" style="display: none;">
             <a href="#" class="title">
-                <p>deezer <b>Premium Stundent</p>
+                <p>deezer <b>Premium Stundent</b></p>
             </a>
-            <p class="fix-text">Todos los beneficios de Deezer Premium a mitad de precio para aprovechar al máximo tu
+            <p class="fix-text">Todos los beneficios de Deezer Premium a mitad de precio para aprovechar al máximo
+                tu
                 vida de
                 estudiante.
                 <br>
                 Disfruta de sonido de alta fidelidad y escucha en todos tus dispositivos.
             </p>
             <br>
-            <a
-                href="https://www.deezer.com/pay_register?referer=https%3A%2F%2Fwww.deezer.com%2Fmx%2Foffers&pay=1&redirect_type=page&redirect_link=%2Fpayment%2Fgo.php%3Fid%3D1000001%26rg%3D1%26origin%3Doffers-page-deezer-premium%26user_just_logged%3D1"><button
-                    type="button">PRUÉBALO GRATIS</button></a>
+            <button type="button" onclick="window.location.href='https://www.deezer.com/pay_register'">
+                PRUÉBALO GRATIS
+            </button>
             <div class="inf-price">
                 <h2>1 mes gratis</h2>
                 <p> luego Col $8.450/mes.</p>
@@ -136,23 +137,22 @@
                 <p>Sin compromiso, puedes cancelar cuando quieras.</p>
                 <a href="https://www.deezer.com/mx/offers/premium">Más información</a>
             </div>
-        </div>
+        </li>
 
-
-
-        <div class="cont-target-family">
+        <li class="cont-target-family">
             <a href="#" class="title">
                 <p>deezer <b>Family</b></p>
             </a>
-            <span>Obtén 6 cuentas individuales, todas con los beneficios de Deezer Premium, incluyendo sonido de alta
+            <span>Obtén 6 cuentas individuales, todas con los beneficios de Deezer Premium, incluyendo sonido de
+                alta
                 fidelidad.
                 <br><br>
                 Escucha simultáneamente en varios dispositivos.
             </span>
             <br>
-            <a
-                href="https://www.deezer.com/pay_register?referer=https%3A%2F%2Fwww.deezer.com%2Fmx%2Foffers&pay=1&redirect_type=page&redirect_link=%2Fpayment%2Fgo.php%3Fid%3D1000001%26rg%3D1%26origin%3Doffers-page-deezer-premium%26user_just_logged%3D1"><button
-                    type="button">PRUÉBALO GRATIS</button></a>
+            <button type="button" onclick="window.location.href='https://www.deezer.com/pay_register'">
+                PRUÉBALO GRATIS
+            </button>
             <div class="inf-price">
                 <h2>1 mes gratis</h2>
                 <p> luego Col $27.900/mes.</p>
@@ -161,25 +161,27 @@
                 <p>Sin compromiso, puedes cancelar cuando quieras.</p>
                 <a href="https://www.deezer.com/mx/offers/premium">Más información</a>
             </div>
-        </div>
+        </li>
+
         <div class="buttom-discount-annual-family" id="buttom-discount-annual-family">
             <a class="discount-annual"
-                onclick="toggleCustomShow('discount-annual-family'), hiddenElement('buttom-discount-annual-family')">Descuento
-                anual<i class=" fi
-                fi-rr-angle-small-down"></i></a>
+                onclick="toggleCustomShow('discount-annual-family'), hiddenElement('buttom-discount-annual-family')">
+                Descuento anual
+                <i class=" fi fi-rr-angle-small-down"></i></a>
             <div class="mini-box-family">
                 <span>-8%</span>
             </div>
         </div>
-        <div class="cont-target-discount-family" id="discount-annual-family" style="display: none;">
+
+        <li class="cont-target-discount-family" id="discount-annual-family" style="display: none;">
             <a href="#" class="title">
-                <p>deezer <b>Family Anual</p>
+                <p>deezer <b>Family Anual</b></p>
             </a>
             <p class="fix-text">Todos los beneficios de Deezer Family a un precio anual con descuento</p>
             <br>
-            <a
-                href="https://www.deezer.com/pay_register?referer=https%3A%2F%2Fwww.deezer.com%2Fmx%2Foffers&pay=1&redirect_type=page&redirect_link=%2Fpayment%2Fgo.php%3Fid%3D1000001%26rg%3D1%26origin%3Doffers-page-deezer-premium%26user_just_logged%3D1"><button
-                    type="button">COMENZAR PRUEBA GRATUITA DE 1 MES</button></a>
+            <button type="button" onclick="window.location.href='https://www.deezer.com/pay_register'">
+                COMENZAR PRUEBA GRATUITA DE 1 MES
+            </button>
             <div class="inf-price">
                 <h2>8 % de descuento cada año</h2>
                 <div class="prices">
@@ -191,41 +193,41 @@
                 <p>Sin compromiso, puedes cancelar cuando quieras.</p>
                 <a href="https://www.deezer.com/mx/offers/premium">Más información</a>
             </div>
-        </div>
+        </li>
 
 
-        <div class="offer">
+        <li class="offer">
             <span>Ofertas de socios</span>
             <a href=""><img class="log-tigo-two" alt="Tigo"
                     src="https://cdns-images.dzcdn.net/images/misc/a0633eb02f235760531c2c4cf79bece0/48x0-none-90-1-1.png">
             </a>
-            <a
-                href="https://www.deezer.com/pay_register?referer=https%3A%2F%2Fwww.deezer.com%2Fmx%2Foffers&pay=1&redirect_type=page&redirect_link=%2Fpayment%2Fgo.php%3Fid%3D1000001%26rg%3D1%26origin%3Doffers-page-deezer-premium%26user_just_logged%3D1"><button
-                    type="button">ACTIVAR LA OFERTA DE MI SOCIO</button></a>
-        </div>
+            <button type="button" onclick="window.location.href='https://www.deezer.com/pay_register'">ACTIVAR LA
+                OFERTA DE MI SOCIO
+            </button>
+        </li>
 
 
-        <div class="gift-card">
+        <li class="gift-card">
             <h2>Tarjeta de regalo</h2>
             <p>¿Hay algo mejor que 3, 6 o 12 meses de música sin límites?</p>
             <img src="img/gift-cards.27e752d1953318003b38c96acacdab68.png" alt="">
-            <a
-                href="https://www.deezer.com/pay_register?referer=https%3A%2F%2Fwww.deezer.com%2Fmx%2Foffers&pay=1&redirect_type=page&redirect_link=%2Fpayment%2Fgo.php%3Fid%3D1000001%26rg%3D1%26origin%3Doffers-page-deezer-premium%26user_just_logged%3D1"><button
-                    type="button">OBTÉN UNA TARJETA DE REGALO</button></a>
+            <button type="button" onclick="window.location.href='https://www.deezer.com/pay_register'">
+                OBTÉN UNA TARJETA DE REGALO
+            </button>
             <a href="https://www.deezer.com/gift/?page=offer_gift">Activar mi tarjeta de regalo</a>
-        </div>
-
+        </li>
 
         <p class="text-end">Estas ofertas son sin compromiso, lo que significa que puedes
             cancelar tu suscripción en
             cualquier momento. Estas ofertas solo están disponibles para usuarios que no tengan actualmente o hayan
-            tenido una suscripción previa a cualquier plan de Deezer, sin beneficios de cualquier promoción previa de
-            Deezer y sin ninguna prueba gratis para cualquier suscripción de Deezer en algún momento. Estas ofertas no
-            se pueden combinar con ninguna otra oferta. Estas son ofertas por tiempo limitado y solo son válidas para un
+            tenido una suscripción previa a cualquier plan de Deezer, sin beneficios de cualquier promoción previa
+            de
+            Deezer y sin ninguna prueba gratis para cualquier suscripción de Deezer en algún momento. Estas ofertas
+            no
+            se pueden combinar con ninguna otra oferta. Estas son ofertas por tiempo limitado y solo son válidas
+            para un
             usuario.</p>
-    </div>
-
-
+    </ul>
 
     <footer>
         <div class="stores-icons">
