@@ -85,7 +85,11 @@ ul.cont-main {
     margin-bottom: 5%;
 }
 
-.head h1 {
+li.discounts {
+    list-style: none;
+}
+
+.cont-main h1 {
     text-align: center;
     color: white;
     margin-bottom: 10%;
@@ -375,7 +379,7 @@ footer {
         margin-bottom: 10%;
     }
 
-    .head h1 {
+    .cont-main h1 {
         margin-bottom: 5%;
     }
 }

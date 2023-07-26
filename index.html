@@ -38,14 +38,12 @@
     </div>
     <!-- Add in the future semantica Article -->
     <ul class="cont-main">
-        <div class="head">
-            <h1>Para empezar a escuchar, solo elige un plan</h1>
-        </div>
+        <h1>Para empezar a escuchar, solo elige un plan</h1>
+        <li>
+            <div class="">
 
-        <div class="">
-
-        </div>
-
+            </div>
+        </li>
         <li class="cont-target-premium">
             <a href="#" class="title">
                 <p>deezer <b>Premium</b></p>
@@ -70,27 +68,29 @@
         </li>
 
         <!-- Conten-discount -->
-        <div class="buttom-discount-annual" id="discount-annual-box">
-            <a class="discount-annual"
-                onclick="toggleCustomShow('discount-annual-premium'), hiddenElement('discount-annual-box')">Descuento
-                anual
-                <i class=" fi fi-rr-angle-small-down"></i></a>
-            <div class="mini-box ">
-                <span>-25%</span>
+        <li class="discounts">
+            <div class="buttom-discount-annual" id="discount-annual-box">
+                <a class="discount-annual"
+                    onclick="toggleCustomShow('discount-annual-premium'), hiddenElement('discount-annual-box')">Descuento
+                    anual
+                    <i class=" fi fi-rr-angle-small-down"></i></a>
+                <div class="mini-box ">
+                    <span>-25%</span>
+                </div>
             </div>
-        </div>
-
-        <div class="buttom-discount-student" id="buttom-discount-student">
-            <a class="discount-student"
-                onclick="toggleCustomShow('discount-annual-student'), hiddenElement('buttom-discount-student')">
-                Descuento para estudiantes
-                <i class=" fi fi-rr-angle-small-down"></i>
-            </a>
-            <div class="mini-box">
-                <span>-50%</span>
+        </li>
+        <li class="discounts">
+            <div class="buttom-discount-student" id="buttom-discount-student">
+                <a class="discount-student"
+                    onclick="toggleCustomShow('discount-annual-student'), hiddenElement('buttom-discount-student')">
+                    Descuento para estudiantes
+                    <i class=" fi fi-rr-angle-small-down"></i>
+                </a>
+                <div class="mini-box">
+                    <span>-50%</span>
+                </div>
             </div>
-        </div>
-
+        </li>
         <li class="cont-target-discount-anual" id="discount-annual-premium" style="display: none;">
             <a href="#" class="title">
                 <p>deezer <b>Premium Anual</b></p>
@@ -163,15 +163,17 @@
             </div>
         </li>
 
-        <div class="buttom-discount-annual-family" id="buttom-discount-annual-family">
-            <a class="discount-annual"
-                onclick="toggleCustomShow('discount-annual-family'), hiddenElement('buttom-discount-annual-family')">
-                Descuento anual
-                <i class=" fi fi-rr-angle-small-down"></i></a>
-            <div class="mini-box-family">
-                <span>-8%</span>
+        <li class="discounts">
+            <div class="buttom-discount-annual-family" id="buttom-discount-annual-family">
+                <a class="discount-annual"
+                    onclick="toggleCustomShow('discount-annual-family'), hiddenElement('buttom-discount-annual-family')">
+                    Descuento anual
+                    <i class=" fi fi-rr-angle-small-down"></i></a>
+                <div class="mini-box-family">
+                    <span>-8%</span>
+                </div>
             </div>
-        </div>
+        </li>
 
         <li class="cont-target-discount-family" id="discount-annual-family" style="display: none;">
             <a href="#" class="title">
@@ -217,16 +219,18 @@
             <a href="https://www.deezer.com/gift/?page=offer_gift">Activar mi tarjeta de regalo</a>
         </li>
 
-        <p class="text-end">Estas ofertas son sin compromiso, lo que significa que puedes
-            cancelar tu suscripción en
-            cualquier momento. Estas ofertas solo están disponibles para usuarios que no tengan actualmente o hayan
-            tenido una suscripción previa a cualquier plan de Deezer, sin beneficios de cualquier promoción previa
-            de
-            Deezer y sin ninguna prueba gratis para cualquier suscripción de Deezer en algún momento. Estas ofertas
-            no
-            se pueden combinar con ninguna otra oferta. Estas son ofertas por tiempo limitado y solo son válidas
-            para un
-            usuario.</p>
+        <li class="text-end">
+            <p>Estas ofertas son sin compromiso, lo que significa que puedes
+                cancelar tu suscripción en
+                cualquier momento. Estas ofertas solo están disponibles para usuarios que no tengan actualmente o hayan
+                tenido una suscripción previa a cualquier plan de Deezer, sin beneficios de cualquier promoción previa
+                de
+                Deezer y sin ninguna prueba gratis para cualquier suscripción de Deezer en algún momento. Estas ofertas
+                no
+                se pueden combinar con ninguna otra oferta. Estas son ofertas por tiempo limitado y solo son válidas
+                para un
+                usuario.</p>
+        </li>
     </ul>
 
     <footer>
@@ -238,7 +242,8 @@
                     src="img/GooglePlay.png" alt="Descargalo en Google Play"></a>
         </div>
         <div class="cont-foot">
-            <ul> Deezer
+            <ul>
+                <li>Deezer</li>
                 <li>Planes</li>
                 <li>Dispositivos</li>
                 <li>Descarga la aplicación para computadora</li>
@@ -247,14 +252,16 @@
                 <li>Community y sugerencias</li>
                 <li>Blog</li>
             </ul>
-            <ul> Ventajas
+            <ul>
+                <li>Ventajas</li>
                 <li>Flow</li>
                 <li>Identificar canciones</li>
                 <li>Transferir tu biblioteca</li>
                 <li>Letras</li>
                 <li>Escucha sin conexión</li>
             </ul>
-            <ul> Explorar
+            <ul>
+                <li>Explorar</li>
                 <li>Listas de éxitos</li>
                 <li>Lanzamiento más popular</li>
                 <li>Nuevos lanzamientos</li>
@@ -263,7 +270,8 @@
                 <li>Música para todos los momentos</li>
                 <li>Zen by deezer</li>
             </ul>
-            <ul> ¿Quiénes somos?
+            <ul>
+                <li>¿Quiénes somos?</li>
                 <li>Inversionistas</li>
                 <li>Brand Parnerships</li>
                 <li>Músicos y podcasters</li>
@@ -271,7 +279,8 @@
                 <li>Prensa</li>
                 <li>Empleos</li>
             </ul>
-            <ul> Legal
+            <ul>
+                <li>Legal</li>
                 <li>Condiciones generales de uso</li>
                 <li>Politica de privacidad</li>
                 <li>Cookies</li>
