@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
 
 /* font-family: 'Roboto', sans-serif; */
-html {
-    border-right: 1px hsla(0, 1%, 35%, 0.979) solid;
-}
+
 
 body {
     color: #fff;
@@ -107,12 +105,12 @@ ul.cont-main {
     display: flex;
     flex-flow: column nowrap;
     margin: auto;
-    margin: 0% 32% 0% 32%;
+    margin: 0% 32% 4% 32%;
 }
 
 /* Title first main 'li' */
-.title-main,
-.title-main h1 {
+li.title-main,
+li.title-main h1 {
     list-style: none;
     text-align: center;
     color: white;
@@ -120,7 +118,7 @@ ul.cont-main {
 }
 
 /* Styles add incompatibility */
-.incompatibility-notice {
+li.incompatibility-notice {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -132,7 +130,7 @@ ul.cont-main {
     font-size: smaller;
 }
 
-.incompatibility-notice img {
+li.incompatibility-notice img {
     padding: 20px;
     width: 4%;
     height: 40%;
@@ -336,7 +334,7 @@ li.cont-target-discount-family {
 }
 
 /* Style for partners offer */
-.offer {
+li.offer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -348,7 +346,7 @@ li.cont-target-discount-family {
 }
 
 /* Style for gift card and their elements */
-.gift-card {
+li.gift-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,7 +357,7 @@ li.cont-target-discount-family {
     margin-bottom: 15%;
 }
 
-.gift-card a {
+li.gift-card a {
     text-decoration: none;
     padding: 20px;
     color: white;
@@ -368,7 +366,7 @@ li.cont-target-discount-family {
 }
 
 /* Text end important */
-.text-end {
+li.text-end {
     list-style: none;
     text-align: center;
     width: 90%;
@@ -382,13 +380,14 @@ li.cont-target-discount-family {
 footer {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
     margin: auto;
     border-top: 1px hsla(0, 1%, 35%, 0.979) solid;
 }
 
 .stores-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     padding: 3.5% 0% 2% 0%;
 }
 
@@ -399,11 +398,9 @@ footer {
 .cont-foot {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: auto;
     font-family: 'Times New Roman', Times, serif;
-    gap: 100px;
 }
 
 .cont-foot ul li {
@@ -413,12 +410,56 @@ footer {
     color: #a09fa0;
 }
 
+.foot {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.icons-redes {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 30px 15px 30px;
+    gap: 10px;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+.icons-redes img {
+    width: 30px;
+}
+
+
+.logo-deezer-foot img {
+    height: 100px;
+    width: auto;
+    margin: 0 5% 10px 0;
+}
+
+.cont-right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    font-size: smaller;
+}
+
+.cont-right p {
+    color: #6b696d;
+}
+
 /* Resposive */
 
 @media screen and (max-width: 1380px) {
 
     .try-background {
-        /* Ajustar los estilos para pantallas más pequeñas */
         height: 400px;
         width: 80%;
         margin-left: 10%;
@@ -462,6 +503,13 @@ footer {
     .cont-main h1 {
         margin-bottom: 5%;
     }
+
+    .foot {
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 5%;
+    }
 }
 
 
@@ -500,10 +548,22 @@ footer {
         padding: 10px;
         font-size: 12px;
     }
+
+    .foot {
+        width: 100%;
+        flex-flow: column wrap;
+        justify-content: center;
+        gap: 5%;
+    }
 }
 
 @media screen and (max-width: 450px) {
+    body {
+        margin: auto;
+    }
+
     ul.cont-main {
-        margin: 0% 5% 0% 5%;
+        margin: auto;
+        margin-right: 5%;
     }
 }
